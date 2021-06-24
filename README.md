@@ -1,18 +1,18 @@
 
 
-# Ori-Api `v1.1.0`
+# Ori-Api `v1.4.0`
 A package to interact with Ori Bots Api.
 Brought To You By ElijahsDev.me
 
 
-<a href="https://www.npmjs.com/package/oriapi2-0"><img src="https://img.shields.io/badge/Version%3A-1.1.0-brightgreen" alt="NPM version" /></a>
-<a href="https://www.npmjs.com/package/oriapi2-0"><img src="https://img.shields.io/github/issues-raw/Elijahs-Development/Ori-Api" alt="NPM downloads" /></a>
+<a href="https://www.npmjs.com/package/oriapi"><img src="https://img.shields.io/badge/Version%3A-1.1.0-brightgreen" alt="NPM version" /></a>
+<a href="https://github.com/Elijahs-Development/Ori-Api/"><img src="https://img.shields.io/github/issues-raw/Elijahs-Development/Ori-Api" alt="NPM downloads" /></a>
 
 
-<a href="https://nodei.co/npm/dumb-botlistjs"><img src="https://nodei.co/npm/oriapi2-0.png" alt="npm installnfo" /></a>
+<a href="https://www.npmjs.com/package/oriapi"><img src="https://nodei.co/npm/oriapi2-0.png" alt="npm installnfo" /></a>
 
 #### Instalation
-To install this package please run `npm install oriapi2-0`
+To install this package please run `npm install oriapi`
 
 #### Example of usage
 ```js
