@@ -5,7 +5,7 @@ A package to interact with Ori Bots Api.
 Brought To You By ElijahsDev.me
 
 
-<a href="https://www.npmjs.com/package/oriapi"><img src="https://img.shields.io/badge/Version%3A-1.1.0-brightgreen" alt="NPM version" /></a>
+<a href="https://www.npmjs.com/package/oriapi"><img src="https://img.shields.io/badge/Version%3A-1.5.0-brightgreen" alt="NPM version" /></a>
 <a href="https://github.com/Elijahs-Development/Ori-Api/"><img src="https://img.shields.io/github/issues-raw/Elijahs-Development/Ori-Api" alt="NPM downloads" /></a>
 
 
