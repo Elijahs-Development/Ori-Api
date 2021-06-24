@@ -1,17 +1,34 @@
-const oriapi = require("oriapi");
-const dbl = new oriapi("TOKEN-HERE", client);
+const fetch = require("node-fetch");
+module.exports = class UDL {
+  constructor(token, client) {
+    this['ORIBOTS-TOKEN'] = token;
+    this['client id'] = client;
+    return this;
+  }
 
-client.on("ready", async () => {
-  dbl.serverCount();
-  // console.log("Server count posted")
-  let hasVote = await dbl.hasVoted("BOT-ID-HERE");
-  if(hasVote === true) {
-    console.log("Voted");
-  } else {
-    console.log("Vote please.");
+  serverCount(message) {
+  fetch(`https://oribots.tk/api/bots/stats`, {
+        method: 'POST',
+        headers: { 
+          'serverCount': this.client.guilds.cache.size,
+          'Content-Type': 'application/json', 
+          'Authorization': this.token
+        },
+    })
+    .then(console.log(message || "Server count posted."));
   }
   
+  async search(id) {
+  return await fetch(`https://oribots.tk/api/bots/${id}`, {
+        method: 'GET'
+    })
+    .then(res => res.json()).then(json => json);
+  }
   
-  let search = await dbl.search("BOT-ID-HERE");
-  console.log(search);
-});
+  async hasVoted(id) {
+  return await fetch(`https://oribots.tk/api/bots/check/${id}`, {method: 'GET',headers: { 
+    'Content-Type': 'application/json', 'Authorization': this.token
+  }
+  }).then(res => res.json()).then(async json => json.voted);
+  }
+}
