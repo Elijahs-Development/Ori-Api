@@ -1,4 +1,4 @@
-const oriapi = require("oribotsapi");
+const oriapi = require("oriapi");
 const dbl = new oriapi("TOKEN-HERE", client);
 
 client.on("ready", async () => {
@@ -14,4 +14,4 @@ client.on("ready", async () => {
   
   let search = await dbl.search("BOT-ID-HERE");
   console.log(search);
-});```
+});
