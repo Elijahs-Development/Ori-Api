@@ -1,6 +1,6 @@
 
 
-# Ori-Api `v1.4.0`
+# Ori-Api `v1.5.0`
 A package to interact with Ori Bots Api.
 Brought To You By ElijahsDev.me
 
